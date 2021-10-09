@@ -1,6 +1,6 @@
 body {
   background-color: #303030;
-  color: #ffffff;
+  color: white;
   display: grid;
   grid-template-columns: [left] 25% [middle-left] 50% [middle-right] 25% [right];
   grid-template-rows: [top] auto [content-top] auto [content-bottom] 100pt [bottom];
@@ -9,6 +9,12 @@ body {
 header {
   grid-column: left / right;
   grid-row: top / content-top;
+  text-align: center;
+}
+
+/* this should be for the subtitle*/
+h1 ~ p {
+  text-decoration: double;
 }
 
 footer {
@@ -28,9 +34,40 @@ main {
   justify-content: flex-start;
 }
 
-#attendance li {
-  margin-right: 20pt;
+.content li {
+  margin: 2pt 20pt 4pt 4pt;
+  padding: 1pt 1pt 1pt 1pt;
+}
 
+#attendance > li {
+  margin-right: 20pt;
+  margin-top: 2pt;
+  margin-bottom: 3pt;
+  margin-left: 3pt;
+  padding-top: 1pt;
+  padding-bottom: 1pt;
+  padding-left: 1pt;
+  padding-right: 1pt;
+}
+
+/* link colors */
+a {
+  color: #22a7f0;
+}
+
+a:visited {
+  color:  rgb(190, 144, 212);
+}
+
+a:hover {
+  color: hsl(32, 97%, 46%);
+}
+
+fieldset.test {
+  border-style:double;
+  border-color:darkgray;
+  border-width: 0.5em;
+  border-radius: 4px;
 }
 
 /* font has been imported in html */
