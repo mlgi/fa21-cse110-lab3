@@ -1,4 +1,7 @@
 body {
   background-color: #303030;
   color: #ffffff;
+  /* font has been imported in html */
+  font-family: "Open Sans";
 }
+
