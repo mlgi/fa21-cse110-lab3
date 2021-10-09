@@ -3,7 +3,7 @@ body {
   color: #ffffff;
   display: grid;
   grid-template-columns: [left] 25% [middle-left] 50% [middle-right] 25% [right];
-  grid-template-rows: [top] auto [content-top] auto [content-bottom] 100px [bottom];
+  grid-template-rows: [top] auto [content-top] auto [content-bottom] 100pt [bottom];
 }
 
 header {
@@ -19,6 +19,18 @@ footer {
 main {
   grid-column: middle-left / middle-right;
   grid-row: content-top / content-bottom;
+}
+
+#attendance {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#attendance li {
+  margin-right: 20pt;
+
 }
 
 /* font has been imported in html */
