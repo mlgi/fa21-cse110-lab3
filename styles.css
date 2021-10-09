@@ -1,7 +1,27 @@
 body {
   background-color: #303030;
   color: #ffffff;
-  /* font has been imported in html */
-  font-family: "Open Sans";
+  display: grid;
+  grid-template-columns: [left] 25% [middle-left] 50% [middle-right] 25% [right];
+  grid-template-rows: [top] auto [content-top] auto [content-bottom] 100px [bottom];
 }
 
+header {
+  grid-column: left / right;
+  grid-row: top / content-top;
+}
+
+footer {
+  grid-column: left/right;
+  grid-row: content-bottom / bottom;
+}
+
+main {
+  grid-column: middle-left / middle-right;
+  grid-row: content-top / content-bottom;
+}
+
+/* font has been imported in html */
+* {
+  font-family: "Open Sans";
+}
