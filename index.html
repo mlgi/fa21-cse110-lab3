@@ -8,13 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+      @media (max-width: 700px) {
+        body {
+          grid-template-columns: [left] 0 [middle-left] auto [middle-right] 0 [right];
+        }
+      }
+
+      h3, ul {
+        position: static;
+      }
+    </style>
   </head>
   <body>
+    <div></div>
     <header>
      <h1>FFXIV Endwalker 6.2 Raid Planning</h1>
      <p>Scheduling and Goals</p>
      <p>20 October 2021</p>
-     <hr/>
     </header> 
     
     <main class="content">
@@ -32,7 +43,7 @@
       </section> 
 
 
-     <section>
+     <section style="position: static;">
       <h2>Present</h2>
       <ul id="attendance">
         <li>Jimmy Joe</li>
